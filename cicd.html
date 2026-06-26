@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Kubernetes for DevOps: Container Orchestration at Scale</title>
+  <meta name="description" content="Discover why Kubernetes is a critical DevOps skill for container orchestration, scalability, high availability, and cloud-native applications." />
+  <meta name="keywords" content="Kubernetes DevOps, container orchestration, Kubernetes clusters, cloud-native DevOps" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Favicons -->
+<link rel="icon" type="image/x-icon" href="/assets/favicon/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
+
+  <link rel="stylesheet" href="assets/css/style.css" />  
+</head>
+<body>
+
+<!-- ================= HEADER ================= -->
+<header>
+  <nav>
+    <div class="logo">
+      <strong>DGTech Consultancy</strong>
+    </div>
+    <div>
+      <a href="https://www.dgtechconsultancy.com/#home">Home</a>
+      <a href="https://www.dgtechconsultancy.com/#services">Services</a>
+      <a href="https://www.dgtechconsultancy.com/#training">Training</a>
+      <a href="https://www.dgtechconsultancy.com/#blog">Blog</a>
+      <a href="https://www.dgtechconsultancy.com/contact.html" target="_blank" rel="noopener noreferrer">Contact</a>
+    </div>
+        <div class="logo-container">
+            <img src="images/dgtechweb.png" alt="DGTech Logo" width="250" height="100"  class="main-logo">
+        </div>
+  </nav>
+</header>
+
+<div class="page-wrapper">
+
+<main class="page-container">
+  <h1>CI/CD Pipeline Design & Automation using GitHub Actions and GitHub Pages</h1>
+
+<h2>Introduction</h2>
+  <p>
+Continuous Integration and Continuous Deployment (CI/CD) is a DevOps practice that automates the process of building,
+testing, and deploying software. Rather than manually testing and publishing every code change, 
+a CI/CD pipeline ensures that each update is automatically validated and, if successful, deployed to production. 
+This reduces human error, speeds up software delivery, and improves software quality.
+  <br>
+  In this implementation, GitHub serves as the source code repository, GitHub Actions provides workflow automation, 
+and GitHub Pages hosts the final web application or documentation.
+  </p>
+
+  <h2>CI/CD Pipeline Components</h2>
+  <br><h4> 1. GitHub Repository</h4>
+  <p>
+The GitHub repository acts as the central location where the application's source code
+  is stored. Developers work on their local machines and commit changes using Git.
+  <br> Every push to the repository automatically triggers the CI/CD pipeline.
+
+  </p>
+<h4>2. Continuous Integration (CI) using GitHub Actions</h4>
+  <p>
+ When code is pushed to the repository, GitHub Actions executes a predefined workflow described in a YAML configuration file located in:
+<br> .github/workflows/
+Typical CI tasks include: <br>
+<ul>
+<li> Checking out the latest source code  </li>
+<li>  Installing project dependencies </li>
+  <li> Running unit tests  </li>
+  <li>  Performing code quality checks </li>
+  <li>  Building the application </li> <br>
+If any step fails, the pipeline stops and reports the failure to the developer.<br>
+  This process ensures that every code change is verified before deployment.
+
+</ul>
+<br>
+  </p>
+  <h4> 3. Continuous Deployment (CD)</h4>
+  <p>
+  If all CI stages complete successfully, the deployment stage begins automatically. <br>
+For a static website, GitHub Actions publishes the generated files to GitHub Pages.<br>
+Deployment includes: <br>
+<ul>
+<li>Packaging the website</li>
+<li>  Uploading build artifacts </li>
+  <li> Publishing to GitHub Pages  </li>
+  </ul>
+  <br>
+  Users can then access the updated website through the GitHub Pages URL.
+
+  </p>
+
+<h2>GitHub Pages <h2>
+<p> GitHub Pages is a static web hosting service integrated with GitHub.
+</p>
+  <p>
+  After deployment, the website becomes publicly accessible without requiring a separate web server.
+</p>
+<p>
+Typical uses include: <br>
+<ul>
+  <li>
+Project websites </li><li>
+Documentation</li><li>
+Portfolio websites</li><li>
+Static web applications<li> <br>
+</ul>
+Each successful deployment updates the hosted website automatically.
+</p>
+  <h2> Complete CI/CD Pipeline Architecture
+</h2>
+  <p> 
+  <img src="images/CICD Github Actions and Pages Architecture.png" alt="CICD with Github Actions and pages" width="550" height="800"
+  </p>
+</main>
+<!-- ================= FOOTER ================= -->
+<footer>
+  <p>© 2025 DGTech Consultancy Private Limited</p>
+  <p>
+    <a href="/">Home</a> |
+    <a href="/privacy.html" target="_blank" rel="noopener noreferrer">Privacy Policy</a> |
+    <a href="/terms.html" target="_blank" rel="noopener noreferrer">Terms</a> |
+    <a href="/contact.html" target="_blank" rel="noopener noreferrer">Contact Us</a>
+  </p>
+</footer>
+</div>
+
+</body>
+</html>
